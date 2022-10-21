@@ -26,6 +26,4 @@ def fizzBuzz(n):
         else:
             output.append(str(i))
     return output
-print(fizzBuzz(15))
-print(fizzBuzz(5))
-print(fizzBuzz(3))
+print(f'FizzBuzz solution for 3 is: {fizzBuzz(3)} ; for 5 is: {fizzBuzz(5)} ; for 15 is: {fizzBuzz(15)}')
