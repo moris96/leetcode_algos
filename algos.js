@@ -67,6 +67,18 @@ const fizzBuzz = (n) => {
     }
     return output
 };
-console.log(fizzBuzz(15))
+// console.log(fizzBuzz(15))
 
 
+// Sqrt(x)
+const mySqrt = (x) => {
+    return (Math.floor(Math.sqrt(x)))
+};
+// console.log(mySqrt(8))
+
+
+// Math pow(x,n)
+const myPow = (x, n) => {
+    return x ** n
+};
+// console.log(myPow(2,10))
