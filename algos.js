@@ -1,4 +1,5 @@
 //Roman to integer 
+/*
 const romanToInt = (s) => {
     let nums = {
         I: 1,
@@ -19,8 +20,8 @@ const romanToInt = (s) => {
     }
     return res
 };
-
 x = "III" 
+*/
 // console.log(romanToInt(x))
 
 
@@ -82,3 +83,36 @@ const myPow = (x, n) => {
     return x ** n
 };
 // console.log(myPow(2,10))
+
+
+// Integer to Roman => recursion solution 
+const intToRoman = (num) => {
+ let romans = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL: 40,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1,
+ }
+ let res = ''
+ for(key in romans){
+    const count = Math.floor(num / romans[key])
+    if(count !== 0){
+        res += key.repeat(count)
+    }
+    num %= romans[key]
+    if(num === 0){
+        return res 
+    }
+ }
+ return res 
+};
+// console.log(intToRoman(58))
