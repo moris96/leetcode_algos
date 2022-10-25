@@ -103,16 +103,16 @@ const intToRoman = (num) => {
     I: 1,
  }
  let res = ''
- for(key in romans){
-    const count = Math.floor(num / romans[key])
+ for(i in romans){
+    const count = Math.floor(num / romans[i])
     if(count !== 0){
-        res += key.repeat(count)
+        res += i.repeat(count)
     }
-    num %= romans[key]
+    num %= romans[i]
     if(num === 0){
         return res 
     }
  }
  return res 
 };
-// console.log(intToRoman(58))
+console.log(intToRoman(3))
