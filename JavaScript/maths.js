@@ -38,3 +38,30 @@
 //     return true 
 // }
 // console.log(isPowerOfTwo(3))
+
+
+
+//plus one
+// function plusOne(digits){
+//     for(let i = digits.length - 1; i>=0; i--){
+//         if (digits[i] != 9) {
+//             digits[i]++;
+//             return digits 
+//         } digits[i] = 0
+//     }
+//     digits.unshift(1)
+//     return digits 
+// }
+
+
+//add two integers
+// function sum(num1, num2){
+//     return num1+num2
+// }
+// console.log(sum(12, 5))
+
+
+//root equals sum of children (binary tree)
+// function checkTree(root){
+//     return root.val === root.left.val + root.right.val
+// }
