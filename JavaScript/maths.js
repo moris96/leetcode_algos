@@ -61,7 +61,33 @@
 // console.log(sum(12, 5))
 
 
+
+
 //root equals sum of children (binary tree)
 // function checkTree(root){
 //     return root.val === root.left.val + root.right.val
+// }
+
+
+//same tree
+// function isSameTree(p, q){
+//     if(p===null && q===null) return true 
+//     if(p===null || q==null) return false 
+//     if(p.val === q.val){
+//         const leftRes = isSameTree(p.left, q.left)
+//         const rightRes = isSameTree(p.right, q.right)
+//         return leftRes && rightRes
+//     }
+//     return false 
+// }
+
+
+//symmetric tree 
+// const isSymmetric = (root) => {
+//     return symmetric(root, root)
+//     function symmetric(leftTree, rightTree){
+//         if(leftTree===null && rightTree===null) return true 
+//         if(leftTree===null || rightTree===null) return false 
+//         return(leftTree.val===rightTree.val) && symmetric(leftTree.right, rightTree.left) && symmetric(leftTree.left, rightTree.right)
+//     }
 // }
