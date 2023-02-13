@@ -91,3 +91,24 @@
 //         return(leftTree.val===rightTree.val) && symmetric(leftTree.right, rightTree.left) && symmetric(leftTree.left, rightTree.right)
 //     }
 // }
+
+
+
+//missing number 
+// function missingNumber(nums){
+//     const x = nums.length
+//     let res = ((x + 1) * x) / 2
+//     for (const num of nums) {
+//         res -= num
+//     }
+//     return res 
+// }
+// console.log(missingNumber([3,0,1])) 
+
+
+
+//add digits 
+// function addDigits(num){
+//     return((num-1) % 9 + 1)
+// }
+// console.log(addDigits(38))
