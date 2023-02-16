@@ -112,3 +112,12 @@
 //     return((num-1) % 9 + 1)
 // }
 // console.log(addDigits(38))
+
+
+//reverse integer
+// function reverse(x){
+//     const rev = parseFloat(Math.abs(x).toString().split("").reverse().join("")) 
+//     if(rev > 2**31) return 0
+//     return rev * Math.sign(x) 
+// }
+// console.log(reverse(1534236469)) 
