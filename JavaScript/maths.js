@@ -121,3 +121,22 @@
 //     return rev * Math.sign(x) 
 // }
 // console.log(reverse(1534236469)) 
+
+
+
+//binary search 
+// function search(nums, target){
+//     const res = nums.indexOf(target)
+//     return res 
+// }
+// console.log(search([-1,0,3,5,9,12], 9)) 
+
+
+
+//convert number to hexadecimal 
+// function toHex(num){
+//     const hex = ((num) >>> 0).toString(16)
+//     return hex 
+// }
+// console.log(toHex(-1)) //ffffffff
+// console.log(toHex(26)) //1a
