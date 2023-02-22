@@ -146,7 +146,7 @@
 //single number
 // function singleNumber(nums){
 //     let res = 0
-//     for(let i in nums){
+//     for(const i in nums){
 //         res ^= nums[i]
 //     }
 //     return res 

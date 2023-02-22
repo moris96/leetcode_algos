@@ -22,3 +22,13 @@
 //     return last 
 // }
 // console.log(lengthOfLastWord("Hello World")) 
+
+
+
+//valid anagram
+function isAnagram(s, t){
+    if(s.length !== t.length) return false 
+    return s.split('').sort().join('') === t.split('').sort().join('') ? true : false;
+}
+
+console.log(isAnagram("anagram", "nagaram"))
