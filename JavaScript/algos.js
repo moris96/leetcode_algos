@@ -20,9 +20,9 @@ n = 121
 
 
 // Valid Palindrome (string)
-const isPalindrome = (s) => {
-    return s == s.split('').reverse().join('')
-};
+// const isPalindrome = (s) => {
+//     return s == s.split('').reverse().join('')
+// };
 // console.log(isPalindrome("race a car"))
 // console.log(isPalindrome("lol"))
 // console.log(isPalindrome("amanaplanacanalpanama"))
@@ -30,7 +30,7 @@ const isPalindrome = (s) => {
 
 //FizzBuzz (the most classic lol)
 const fizzBuzz = (n) => {
-    let output = []
+    const output = []
     for(let i = 1; i <= n; i++){
         if(i % 15 == 0){
             output.push("FizzBuzz")
@@ -44,7 +44,7 @@ const fizzBuzz = (n) => {
     }
     return output
 };
-// console.log(fizzBuzz(15))
+console.log(fizzBuzz(15))
 
 
 // Sqrt(x)
