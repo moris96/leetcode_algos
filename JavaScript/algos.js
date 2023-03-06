@@ -1,6 +1,3 @@
-
-
-
 //Palindrome number 
 /*
 const isPalindrome = (x) => {
@@ -29,35 +26,45 @@ n = 121
 
 
 //FizzBuzz (the most classic lol)
-const fizzBuzz = (n) => {
-    const output = []
-    for(let i = 1; i <= n; i++){
-        if(i % 15 == 0){
-            output.push("FizzBuzz")
-        } else if(i % 3 == 0){
-            output.push("Fizz")
-        } else if(i % 5 == 0){
-            output.push("Buzz") 
-        } else{
-            output.push(i.toString())
-        }
-    }
-    return output
-};
-console.log(fizzBuzz(15))
+// const fizzBuzz = (n) => {
+//     const output = []
+//     for(let i = 1; i <= n; i++){
+//         if(i % 15 == 0){
+//             output.push("FizzBuzz")
+//         } else if(i % 3 == 0){
+//             output.push("Fizz")
+//         } else if(i % 5 == 0){
+//             output.push("Buzz") 
+//         } else{
+//             output.push(i.toString())
+//         }
+//     }
+//     return output
+// };
+// console.log(fizzBuzz(15))
 
 
 // Sqrt(x)
-const mySqrt = (x) => {
-    return (Math.floor(Math.sqrt(x)))
-};
+// const mySqrt = (x) => {
+//     return (Math.floor(Math.sqrt(x)))
+// };
 // console.log(mySqrt(8))
 
 
 // Math pow(x,n)
-const myPow = (x, n) => {
-    return x ** n
-};
+// const myPow = (x, n) => {
+//     return x ** n
+// };
 // console.log(myPow(2,10))
 
 
+
+// reverse linked list 
+function reverseList(head){
+    if(head===null) return null 
+    if(head.next===null) return head 
+    let newHead = reverseList(head.next)
+    head.next.next = head 
+    head.next = null 
+    return newHead
+}
