@@ -60,11 +60,11 @@ n = 121
 
 
 // reverse linked list 
-function reverseList(head){
-    if(head===null) return null 
-    if(head.next===null) return head 
-    let newHead = reverseList(head.next)
-    head.next.next = head 
-    head.next = null 
-    return newHead
-}
+// function reverseList(head){
+//     if(head===null) return null 
+//     if(head.next===null) return head 
+//     let newHead = reverseList(head.next)
+//     head.next.next = head 
+//     head.next = null 
+//     return newHead
+// }

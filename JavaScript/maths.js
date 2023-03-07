@@ -166,3 +166,14 @@
 //     return cache[n]
 // }
 // console.log(climbStairs(3)) 
+
+
+//invert binary tree 
+// function invertTree(root){
+//     if(!root) return null 
+//     const leftTree = invertTree(root.left)
+//     const rightTree = invertTree(root.right)
+//     root.left = rightTree
+//     root.right = leftTree
+//     return root 
+// }
