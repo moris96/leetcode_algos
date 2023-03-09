@@ -68,3 +68,17 @@ n = 121
 //     head.next = null 
 //     return newHead
 // }
+
+
+//palindrome linked lists 
+// function isPalindrome(head){
+//     let curr = '';
+//     let rev = '';
+//     while(head){
+//         curr += head.val 
+//         rev = head.val + rev
+//         head = head.next 
+//     }
+//     return curr === rev 
+// }
+// console.log(isPalindrome([1,2,2,1]))
