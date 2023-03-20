@@ -28,3 +28,16 @@
 
 # print(addBinary('11', '1')) 
 # print(addBinary2('11', '1')) 
+
+
+
+#move zeroes -- don't return anything! more challenging that way!!! 
+# def moveZeroes(nums):
+#     size = 0
+#     for i in range(0, len(nums)):
+#         if nums[i] == 0: size += 1 
+#         elif size > 0:
+#             j = nums[i]
+#             nums[i] = 0 
+#             nums[i - size] = j 
+
