@@ -41,3 +41,21 @@
 #             nums[i] = 0 
 #             nums[i - size] = j 
 
+
+
+#count primes 
+# def countPrimes(n):
+#     #0 & 1 are not primes obviously lol
+#     primes = [True for i in range(n)]
+#     i = 2
+#     while(i*i < n):
+#         if(primes[i]==True):
+#             for j in range(i*i, n, i):
+#                 primes[j] = False
+#         i += 1
+#     count = 0 
+#     for i in range(2, len(primes)):
+#         if primes[i]:
+#             count += 1 
+#     return count 
+# print(countPrimes(10)) 
