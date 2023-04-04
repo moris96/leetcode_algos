@@ -14,7 +14,15 @@
 #             start = df 
 #             maxLen += 1 
 #     return s[start: start + maxLen]
-
 # print(longest_palindrome('cbbd'))
 
 
+#valid parenethis 
+# def isValid(s):
+#     parents = dict(('()', '[]', '{}'))
+#     res = []
+#     for i in s:
+#         if i in '([{': res.append(i)
+#         elif len(res) == 0 or i != parents[res.pop()]: return False 
+#     return len(res) == 0     
+# print(isValid("{([()])}"))
