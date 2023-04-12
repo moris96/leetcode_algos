@@ -59,3 +59,16 @@
 #             count += 1 
 #     return count 
 # print(countPrimes(10)) 
+
+
+#maximum subarray 
+# def maxSubArray(nums):
+#     if max(nums)<0: return max(nums)
+#     maxCurr, maxEnd = 0, 0
+#     for i in nums:
+#         maxEnd = maxEnd + i 
+#         maxEnd = max(maxEnd, i)
+#         maxCurr = max(maxCurr, maxEnd)
+#     return maxCurr
+# print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4])) 
+# print(maxSubArray([-1])) 
