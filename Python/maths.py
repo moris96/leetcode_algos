@@ -1,3 +1,5 @@
+from math import * 
+
 #multiply strings 
 # def multiply(num1, num2): 
 #     return str(int(num1) * int(num2))
@@ -72,3 +74,9 @@
 #     return maxCurr
 # print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4])) 
 # print(maxSubArray([-1])) 
+
+
+#power of four 
+# def isPowerOfFour(n):
+#     return n & (n-1)==0 and (n-1)%3==0 
+# print(isPowerOfFour(64))
